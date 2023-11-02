@@ -1,0 +1,377 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*            End of CSS Reset            */
+
+/*                 Setup                  */
+
+/*               Borderbox                */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* clearfix */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  clear: both;
+  *zoom: 1;
+}
+
+/*                  Font                  */
+
+@font-face {
+
+  font-family: "Myriad Set Pro";
+
+  src: url("fonts/myriad-set-pro_bold.ttf") format("truetype");
+
+  font-weight: 700;
+
+}
+
+@font-face {
+
+  font-family: "Myriad Set Pro";
+
+  src: url("fonts/myriad-set-pro_semibold.ttf") format("truetype");
+
+  font-weight: 600;
+
+}
+
+@font-face {
+
+  font-family: "Myriad Set Pro";
+
+  src: url("fonts/myriad-set-pro_medium.ttf") format("truetype");
+
+  font-weight: 500;
+
+}
+
+@font-face {
+
+  font-family: "Myriad Set Pro";
+
+  src: url("fonts/myriad-set-pro_text.ttf") format("truetype");
+
+  font-weight: 400;
+
+}
+
+@font-face {
+
+  font-family: "Myriad Set Pro";
+
+  src: url("fonts/myriad-set-pro_thin.ttf") format("truetype");
+
+  font-weight: 300;
+
+}
+
+@font-face {
+
+  font-family: "Myriad Set Pro";
+
+  src: url("fonts/myriad-set-pro_ultralight.ttf") format("truetype");
+
+  font-weight: 100;
+
+}
+
+html {
+  font-family: "Myriad Set Pro";
+}
+
+/*               End of Setup             */
+/*                  Header                */
+.nav {
+  background-color: #333;
+}
+
+.nav>ul {
+  max-width: 1100px;
+  display: flex;
+  vertical-align: top;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+/*               End of Header             */
+/*                  Hero                   */
+.hero {
+  text-align: center;
+  padding-bottom: 450px;
+  background: url(./images/hero_iphone_13pro.jpg) center no-repeat;
+  background-position: bottom;
+}
+
+#hero1 {
+  font-size: 4em;
+  margin-top: 1em;
+  font-weight: 600;
+}
+
+#hero2 {
+  font-size: 1.8em;
+  margin-top: 0.3em;
+  margin-bottom: 1em;
+  font-weight: 500;
+}
+
+#hero3>section,
+#AC {
+  color: #08c;
+  display: inline-block;
+  font-size: 1.8em;
+  font-weight: 400;
+}
+
+.hero>img {
+  height: 600px;
+  height: auto;
+  margin-top: -200px;
+}
+
+/*                 Sub Hero                */
+.subhero {
+  margin-top: 1em;
+}
+
+.subhero>img {
+  width: 25%;
+  display: inline-block;
+  object-fit: cover;
+  height: 200px;
+}
+
+#AC {
+  text-align: center;
+  margin: 1em 0;
+  width: 100%;
+  font-size: 1.5em;
+}
+
+/*              End of Sub Hero            */
+/*                Footer                   */
+footer {
+  background: #eee;
+}
+.container {
+  max-width: 1100px;
+  font-weight: 400;
+  font-size: 0.75em;
+  color: #666;
+  margin: 0 auto;
+}
+
+.col {
+  font-size: 1em;
+  display: inline-block;
+  width: 19%;
+  vertical-align: top;
+  margin-bottom: 30px;
+}
+
+.links {
+  padding-top: 2em;
+}
+
+.links>li {
+  padding-top: 0.5em;
+
+}
+
+#header {
+  font-weight: 600;
+  color: black;
+}
+h6 {
+  padding-top: 2em;
+  padding-bottom: 1em;
+  color: #999;
+  border-bottom: 1px solid #ddd;
+}
+h6 > a {
+  text-decoration: none;
+}
+.extra {
+  display: inline-flex;
+  max-width: 70%;
+  justify-content:space-between;
+  margin-bottom: 2em;
+}
+.extra > li {
+  padding: 0.5em 1em;
+  border-right: 1px solid #ddd;
+}
+.extra > li:first-child {
+  color: #999;
+  padding-left: 0;
+}
+.extra > li:last-child, .extra > li:first-child { 
+  border-right: 0;
+}
+h5 {
+  display: inline-flex;
+  text-align: right;
+  margin-left: 0.5em;
+  padding-top: 1em;
+}
+.container > img {
+  padding-left: 30%;
+  vertical-align: -0.3em;
+}
+body > a:visited {
+  text-decoration: none;
+}
+.US {
+  float: right;
+}
